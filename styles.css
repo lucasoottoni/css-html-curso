@@ -1,0 +1,28 @@
+
+*{
+    box-sizing: border-box; /* nessa caso, o tamanho da caixa vai incluir sa bordas padding margem etc.  */
+
+}
+.pai{
+}
+
+.filho{
+    background: red;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black
+}
+
+.pai .filho{  /*toda classe filho que for descendente da classe pai receberá essas configurações (ex: filho, neto, bisneto) */
+    background: green;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black
+}
+.pai > .filho{     /*somente a classe filho que for filha da classe pai receberá essas configurações*/
+    background: red;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black
+}
+

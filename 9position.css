@@ -1,0 +1,31 @@
+.relativa{
+    position: relative;
+    top:100px;
+    width: 100%;
+    background: orange;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.absoluta{
+    position: absolute;
+    width: 80%;
+    left: 50px;
+    top:-100px;
+    background: green;
+    height: 100px;
+}
+.relativa:hover{
+    background: #FFF;
+    animation: pulsar 1s;;
+}
+.relativa:hover .absoluta{
+    top:0;
+}
+
+@keyframes pulsar {
+    0%{
+        box-shadow: 0 0 0 0 red;
+    }
+}

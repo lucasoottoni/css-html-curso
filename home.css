@@ -1,0 +1,15 @@
+
+*{
+    box-sizing: border-box; /* nessa caso, o tamanho da caixa vai incluir sa bordas padding margem etc.  */
+
+}
+.container{
+    width: 500px;
+    height: 200px;
+    background:red;
+    margin: 10px;
+    padding: 5px;
+    border-color: black;
+    border: 5px solid;
+}
+

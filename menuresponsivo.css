@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+*{
+    box-sizing: border-box; /* nessa caso, o tamanho da caixa vai incluir sa bordas padding margem etc.  */
+
+}
+
+.container{
+
+    height: 100vh;
+}
+header {
+    background-color: #333;
+    padding: 15px;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.menu-item {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+.restante-site{
+    background: black;
+    height: calc(100vh - 58px);
+}
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Media query para tornar o menu responsivo em telas menores */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 3px;
+    }
+
+    .menu-item {
+        padding: 1px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
