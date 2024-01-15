@@ -68,7 +68,8 @@
     display: block;
 }  
 body {
-    overflow-x: hidden;
+  /*overflow-x: hidden;*/
+
   }
 .caixa-menu{
     position: absolute;
@@ -76,9 +77,11 @@ body {
     right: 0;
     flex-direction: column;
     width: 50vw;
+    height: 92vh;
     align-items: center;
-    background: #23232e  black;
-    /*transform: translateX(100%);*/
+    justify-content: flex-start;
+    background: #23232e;
+    transform: translateX(100%);
     transition: transform 0.5s ease-in;
 
 }
